@@ -40,10 +40,26 @@ function validateForm() {
   }
 }
 
+function storeFormData() {
+  const user = {
+    name: form.name.value,
+    phone: form.phone.value,
+    email: form.email.value,
+    website: form.website.value,
+    password: form.password.value,
+  };
+  // Do something with this data
+  console.log(user);
+}
+
 function processFormData(e) {
   e.preventDefault();
   //   Validate Form
   validateForm();
+  //   Submit Data if Valid
+  if (isValid && passwordsMatch) {
+    storeFormData();
+  }
 }
 
 // Event Listener
