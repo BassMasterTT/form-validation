@@ -13,7 +13,7 @@
     <div class="container">
         <h1>Sign Up Today!</h1>
         <!-- Form -->
-        <form id="form">
+        <form id="form" novalidate>
             <!-- Full Name -->
             <div class="form-group">
                 <label for="name">Full Name</label>
@@ -38,7 +38,7 @@
             <!-- Password -->
             <div class="form-group">
                 <label for="password1">Password</label>
-                <input type="password" id="password" placeholder="Create Password (Min. 8 Characters)" required
+                <input type="password" id="password1" placeholder="Create Password (Min. 8 Characters)" required
                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
                     title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number.">
             </div>
